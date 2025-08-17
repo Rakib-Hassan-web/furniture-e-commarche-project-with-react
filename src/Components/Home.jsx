@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Banner from './Banner'
 import SideTables from './SideTables'
 import Top_Picks from './Top_Picks'
+import NewArrival from './NewArrival'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
        <Banner/>
        <SideTables/>
        <Top_Picks/>
+       <NewArrival/>
     </>
   )
 }
