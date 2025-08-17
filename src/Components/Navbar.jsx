@@ -58,7 +58,7 @@ return (
                 {/* -----icons */}
 
                 <div className='flex items-center gap-10'>
-                    <Link>
+                    <Link to={'/Registerpage'}>
                     <LuUserCheck className='text-black text-2xl font-main font-bold' />
                     </Link>
                     <Link>

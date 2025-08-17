@@ -9,11 +9,11 @@ export default function LoginPage() {
     <div className="flex justify-center items-center py-30">
       <div className="w-full max-w-sm bg-white p-12 rounded-lg shadow-sm">
         {/* Title */}
-        <h2 className="text-[32px]  font-main font-bold text-black mb-6">Log In</h2>
+        <h2 className="text-[30px]  font-main font-bold text-black mb-6">Log In</h2>
 
         {/* Username */}
         <div className="mb-4">
-          <label className="block  text-md font-main font-medium text-gray-700 mb-2">
+          <label className="block  text-sm font-main font-medium text-black mb-2">
             Username or email address
           </label>
           <input
@@ -24,7 +24,7 @@ export default function LoginPage() {
 
         {/* Password */}
         <div className="mb-4">
-          <label className="block text-md font-main font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-main font-medium text-black mb-2">
             Password
           </label>
           <div className="relative">
@@ -53,11 +53,11 @@ export default function LoginPage() {
 
         {/* Login Button & Forgot Password */}
         <div className="flex items-center justify-between">
-          <button  className="px-6 py-2 font-main bg-white border border-gray-300 rounded-md text-black font-medium hover:bg-gray-100">
+          <button  className="px-6 py-2 font-main bg-white border border-gray-300 rounded-md text-black font-medium hover:bg-gray-200 duration-300 cursor-pointer">
             Log In
           </button>
-          <Link  className="text-base text-blue-600 font-medium font-main ">
-            Log in
+          <Link to={'/Registerpage'} className="text-base text-blue-600 font-medium font-main ">
+            Register Here
           </Link>
         </div>
       </div>

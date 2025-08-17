@@ -8,6 +8,7 @@ import Home from './Components/Home'
 import ShopPage from './Pages/ShopPage'
 import SingleProduct from './Pages/SingleProduct'
 import LoginPage from './Pages/LoginPage'
+import Registerpage from './Pages/Registerpage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ const myroute=  createBrowserRouter(createRoutesFromElements(
 <Route path='/Shop' element={<ShopPage/>} />
 <Route path='/SingleProduct' element={<SingleProduct/>} />
 <Route path='/LoginPage' element={<LoginPage/>} />
+<Route path='/Registerpage' element={<Registerpage/>} />
 
 
 
