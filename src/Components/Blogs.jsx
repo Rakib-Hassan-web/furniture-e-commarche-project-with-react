@@ -83,8 +83,8 @@ return (
 
 
                   {/* -single- */}
-                <div className='w-[339px] pb-3 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl mt-15'>
-                    <img src={image1} alt="Blogs" className='w-full h-[287px] bg-gray-100' />
+                <div className='w-[339px] pb-5 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl mt-15'>
+                    <img src={image3} alt="Blogs" className='w-full h-[287px] bg-gray-100' />
                     <h3 className='text-[16px] font-normal font-main text-[#000]  mt-3.5  text-center'>Going all-in with
                         millennial design</h3>
                     <div className='flex justify-center'>
