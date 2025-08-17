@@ -6,6 +6,7 @@ import Top_Picks from './Top_Picks'
 import NewArrival from './NewArrival'
 import Blogs from './Blogs'
 import Follow from './Follow'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
        <NewArrival/>
        <Blogs/>
        <Follow/>
+       <Footer/>
     </>
   )
 }
