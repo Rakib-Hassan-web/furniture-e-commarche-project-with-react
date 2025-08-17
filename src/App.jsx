@@ -6,6 +6,8 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import LayOutOne from './Layout/LayOutOne'
 import Home from './Components/Home'
 import ShopPage from './Pages/ShopPage'
+import SingleProduct from './Pages/SingleProduct'
+import LoginPage from './Pages/LoginPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +20,8 @@ const myroute=  createBrowserRouter(createRoutesFromElements(
 <Route path='/' element={<LayOutOne/>}>
 
 <Route path='/Shop' element={<ShopPage/>} />
+<Route path='/SingleProduct' element={<SingleProduct/>} />
+<Route path='/LoginPage' element={<LoginPage/>} />
 
 
 
