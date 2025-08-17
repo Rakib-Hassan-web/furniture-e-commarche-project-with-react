@@ -18,15 +18,8 @@ return (
             <p className='text-[16px] font-medium font-main text-[#9F9F9F] text-center mt-3.5'>Find a bright ideal to
                 suit your taste with our great selection</p>
 
-           
-           
 
-
-
-
-
-
-            <div className='flex items-center justify-around'> 
+            <div className='flex items-center justify-around mb-26'>
 
 
                 {/* -single- */}
@@ -55,7 +48,7 @@ return (
                 </div>
 
 
-                  {/* -single- */}
+                {/* -single- */}
                 <div className='w-[339px] pb-5 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl mt-15'>
                     <img src={image2} alt="Blogs" className='w-full h-[287px] bg-gray-100' />
                     <h3 className='text-[16px] font-normal font-main text-[#000]  mt-3.5  text-center'>Going all-in with
@@ -82,7 +75,7 @@ return (
 
 
 
-                  {/* -single- */}
+                {/* -single- */}
                 <div className='w-[339px] pb-5 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl mt-15'>
                     <img src={image3} alt="Blogs" className='w-full h-[287px] bg-gray-100' />
                     <h3 className='text-[16px] font-normal font-main text-[#000]  mt-3.5  text-center'>Going all-in with
@@ -107,22 +100,13 @@ return (
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
 
 
-
+            <div className='text-center'>
+                <Link className='text-[20px] font-medium font-main text-black border-b-2  '>View More</Link>
+            </div>
 
 
         </div>
