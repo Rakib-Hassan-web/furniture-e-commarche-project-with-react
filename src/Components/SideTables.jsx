@@ -18,7 +18,7 @@ return (
                     <div>
                         <img src={image1} alt="Table1" className='w-[500px]' />
                         <h2 className='text-[36px] font-medium font-main text-black mb-5'>Side table</h2>
-                        <Link className='text-[20px] font-medium font-main text-black border-b-2 '>View More</Link>
+                        <Link to={'/Shop'} className='text-[20px] font-medium font-main text-black border-b-2 '>View More</Link>
 
                     </div>
                 </div>
@@ -26,9 +26,9 @@ return (
                 <div>
 
                     <div>
-                        <img src={image2} alt="Table1" className='w-[500px]' />
+                        <img src={image2} alt="Table1" className='w-[600px]' />
                         <h2 className='text-[36px] font-medium font-main text-black mb-5'>Side table</h2>
-                        <Link className='text-[20px] font-medium font-main text-black border-b-2 '>View More</Link>
+                        <Link to={'/Shop'} className='text-[20px] font-medium font-main text-black border-b-2 '>View More</Link>
 
                     </div>
                 </div>

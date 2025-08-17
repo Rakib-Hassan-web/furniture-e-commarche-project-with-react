@@ -13,8 +13,7 @@ return (
             <h3 className='text-[20px] font-main font-bold text-black text-center mb-9'>Follow our store on Instagram</h3>
 
 <div className='text-center'>
-            <Link className='text-[20px] py-[17px] px-[75px]  font-normal font-main text-[#000] text-center border rounded-full bg-pink-100 '>Order
-            Now</Link>
+            <Link className='text-[20px] py-[17px] px-[75px]  font-normal font-main text-[#000] text-center rounded-full bg-pink-100 shadow-[5px_5px_15px_-3px_rgba(0,_0,_0,_0.15)]'>Follow Us</Link>
             </div>
 
         </div>

@@ -14,7 +14,7 @@ return (
             <div className=' relative'>
                 <h2 className='text-[64px] font-medium font-main text-black w-[440px]  mb-9'>Rocket single seater</h2>
 
-                <Link className='text-[24px] font-medium font-main text-black border-b-2 '>Shop Now</Link>
+                <Link to={'/Shop'} className='text-[24px] font-medium font-main text-black border-b-2 '>Shop Now</Link>
             </div>
         </div>
     </section>

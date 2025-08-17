@@ -21,7 +21,7 @@ return (
                 <Single_picks />
             </div>
             <div className='text-center'>
-                <Link className='text-[20px] font-medium font-main text-black border-b-2  '>View More</Link>
+                <Link to={'/Shop'}  className='text-[20px] font-medium font-main text-black border-b-2  '>View More</Link>
             </div>
 
 

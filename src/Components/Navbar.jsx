@@ -11,6 +11,9 @@ return (
 
     <nav id='navbar' className='bg-[#FBEBB5] py-9.5'>
         <div className="container">
+            <div>
+                <Link to={'/'}> RAKIB</Link>
+            </div>
 
 
 
