@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Single_picks = () => {
-return (
-<>
-
-    <section className='mt-[65px] mb-26'>
+const SingleBlogs = () => {
+  return (
+    <>
+    
+    
+    
+        <section className='mt-[65px] mb-26'>
 
 
         <div className='w-[287px] pb-3 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)]'>
@@ -19,15 +21,17 @@ return (
 
 
     </section>
-
-
-
-
-
-
-
-</>
-)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </>
+  )
 }
 
-export default Single_picks
+export default SingleBlogs
