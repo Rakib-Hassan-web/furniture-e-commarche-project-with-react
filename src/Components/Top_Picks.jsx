@@ -1,5 +1,6 @@
 import React from 'react'
 import Single_picks from './Single_picks'
+import { Link } from 'react-router'
 
 const Top_Picks = () => {
   return (
@@ -17,6 +18,9 @@ const Top_Picks = () => {
     <Single_picks/>
     <Single_picks/>
     <Single_picks/>
+</div>
+<div className='text-center'>
+                        <Link className='text-[20px] font-medium font-main text-black border-b-2  '>View More</Link>
 </div>
 
 

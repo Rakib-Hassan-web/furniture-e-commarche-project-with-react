@@ -4,7 +4,7 @@ const Single_picks = () => {
   return (
     <>
     
-    <section className='mt-[65px]'>
+    <section className='mt-[65px] mb-26'>
 
 
 <div className='w-[287px] pb-3 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)]'>
