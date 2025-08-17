@@ -18,16 +18,71 @@ return (
             <p className='text-[16px] font-medium font-main text-[#9F9F9F] text-center mt-3.5'>Find a bright ideal to
                 suit your taste with our great selection</p>
 
-            {/*
-            <SingleBlogs /> */}
+           
+           
 
 
 
 
 
 
-            <div>
+            <div className='flex items-center justify-around'> 
+
+
                 {/* -single- */}
+                <div className='w-[339px] pb-5 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl mt-15'>
+                    <img src={image1} alt="Blogs" className='w-full h-[287px] bg-gray-100' />
+                    <h3 className='text-[16px] font-normal font-main text-[#000]  mt-3.5  text-center'>Going all-in with
+                        millennial design</h3>
+                    <div className='flex justify-center'>
+                        <Link className='text-[24px] font-medium font-main text-[#000]  mt-3.5 border-b'>Read More
+                        </Link>
+                    </div>
+                    <div className='flex items-center gap-4 justify-center mt-5'>
+                        {/* time */}
+                        <div className='flex gap-1.5 items-center'>
+                            <IoTimeOutline />
+                            <p className='text-[12px] font-normal font-main text-[#000]'>5 min</p>
+                        </div>
+                        {/* calender-- */}
+                        <div className='flex gap-1.5 items-center'>
+                            <CiCalendar />
+                            <p className='text-[12px] font-normal font-main text-[#000]'>12th Oct 2022</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                  {/* -single- */}
+                <div className='w-[339px] pb-5 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl mt-15'>
+                    <img src={image2} alt="Blogs" className='w-full h-[287px] bg-gray-100' />
+                    <h3 className='text-[16px] font-normal font-main text-[#000]  mt-3.5  text-center'>Going all-in with
+                        millennial design</h3>
+                    <div className='flex justify-center'>
+                        <Link className='text-[24px] font-medium font-main text-[#000]  mt-3.5 border-b'>Read More
+                        </Link>
+                    </div>
+                    <div className='flex items-center gap-4 justify-center mt-5'>
+                        {/* time */}
+                        <div className='flex gap-1.5 items-center'>
+                            <IoTimeOutline />
+                            <p className='text-[12px] font-normal font-main text-[#000]'>5 min</p>
+                        </div>
+                        {/* calender-- */}
+                        <div className='flex gap-1.5 items-center'>
+                            <CiCalendar />
+                            <p className='text-[12px] font-normal font-main text-[#000]'>12th Oct 2022</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                  {/* -single- */}
                 <div className='w-[339px] pb-3 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl mt-15'>
                     <img src={image1} alt="Blogs" className='w-full h-[287px] bg-gray-100' />
                     <h3 className='text-[16px] font-normal font-main text-[#000]  mt-3.5  text-center'>Going all-in with
