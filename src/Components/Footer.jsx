@@ -8,7 +8,7 @@ return (
 
     <footer className="w-full bg-white px-10 py-16">
         <div className="container">
-            <div className="flex items-center justify-between">
+            <div className="flex   justify-between">
 
 
 
@@ -34,26 +34,29 @@ return (
                 {/* Help */}
                 <div>
                     <h3 className="text-[#9F9F9F] font-main  text-base font-medium mb-8">Help</h3>
-                    <ul className="space-y-3">
-                        <li>
-                            <Link className="text-black font-medium hover:underline">Payment Options</Link>
+                    <ul className="">
+                        <li className='mb-11'>
+                            <Link className="text-black  font-main  text-base font-medium mb-11 ">Payment Options</Link>
                         </li>
-                        <li>
-                            <Link className="text-black font-medium hover:underline">Returns</Link>
+                        <li className='mb-11'>
+                            <Link className="text-black  font-main  text-base font-medium mb-11 ">Returns</Link>
                         </li>
-                        <li>
-                            <Link className="text-black font-medium hover:underline">Privacy Policies</Link>
+                        <li className=''>
+                            <Link className="text-black  font-main  text-base font-medium mb-11 ">Privacy Policies
+                            </Link>
                         </li>
                     </ul>
                 </div>
 
                 {/* Newsletter */}
                 <div>
-                    <h3 className="text-gray-400 font-medium mb-4">Newsletter</h3>
-                    <div className="flex items-center border-b border-black">
-                        <input type="email" placeholder="Enter Your Email Address"
-                            className="flex-1 outline-none py-2 text-sm text-gray-600 placeholder-gray-400" />
-                        <button className="text-black font-semibold text-sm ml-3">
+                    <h3 className="text-[#9F9F9F] font-main  text-base font-medium mb-8">Newsletter</h3>
+                    <div className='flex items-center gap-2.5'>
+                        <div className="flex items-center border-b-2 w-[200px] py-2 ">
+                            <input type="email" placeholder="Enter Your Email Address"
+                                className="border-none w-[200px] border-black outline-none text-black font-main font-normal text-base" />
+                        </div>
+                        <button className="text-black font-medium  text-base font-main ml-3 border-b-2 w-[90px] py-2 ">
                             SUBSCRIBE
                         </button>
                     </div>
