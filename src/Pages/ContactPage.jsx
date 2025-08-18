@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
+import { IoTime } from 'react-icons/io5'
 
 const ContactPage = () => {
 return (
@@ -37,18 +38,31 @@ return (
                     </div>
 
                     {/* phone */}
-                       <div className='flex gap-4.5  '>
+                    <div className='flex gap-4.5 mt-11  '>
                         <FaPhoneAlt className='text-black text-xl mt-1.5' />
 
                         <div>
                             <h2 className='text-[24px] font-medium font-main text-black'>Phone</h2>
                             <p className='text-base font-main font-normal text-black w-[212px]'>Mobile: +(84) 546-6789
-</p>
+                            </p>
                             <p className='text-base font-main font-normal text-black w-[212px]'>Hotline: +(84) 456-6789
-</p>
+                            </p>
                         </div>
                     </div>
+                    {/* timee */}
 
+    <div className='flex gap-4.5 mt-11  '>
+                        <IoTime className='text-black text-xl mt-1.5' />
+
+                        <div>
+                            <h2 className='text-[24px] font-medium font-main text-black'>Working Time</h2>
+                            <p className='text-base font-main font-normal text-black w-[212px]'>Monday-Friday: 9:00 - 22:00
+
+                            </p>
+                            <p className='text-base font-main font-normal text-black w-[212px]'>Saturday-Sunday: 9:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
 
 
 
