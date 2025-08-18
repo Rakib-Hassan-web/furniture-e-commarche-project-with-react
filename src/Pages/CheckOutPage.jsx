@@ -13,15 +13,15 @@ const CheckOutPage = () => {
                 {/* ----------------- left-side */}
                 <div>
                     {/* -------- billing-address */}
-                    <div className=''><h2 className='text-[36px] font-semibold font-popins text-[#000]'>Billing details</h2></div>
+                    <div className=''><h2 className='text-[36px] font-semibold font-main text-[#000]'>Billing details</h2></div>
                     {/* -------------- user */}
                     <div className='flex gap-[31px]'>
                     <div className='pt-[36px]'>
-                      <h2 className='text-[16px] font-medium font-popins text-[#000]'>First Name</h2>
+                      <h2 className='text-[16px] font-medium font-main text-[#000]'>First Name</h2>
                       <input className='w-[211px] h-[75px] mt-[22px] rounded-[10px] border-[#9F9F9F] border' type="text" />
                     </div>
                     <div className='pt-[36px]'>
-                      <h2 className='text-[16px] font-medium font-popins text-[#000]'>Last Name</h2>
+                      <h2 className='text-[16px] font-medium font-main text-[#000]'>Last Name</h2>
                       <input className='w-[211px] h-[75px] mt-[22px] rounded-[10px] border-[#9F9F9F] border' type="text" />
                     </div>
                 </div>
