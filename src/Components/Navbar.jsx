@@ -41,7 +41,7 @@ return (
                     </Link>
 
 
-                    <Link className="relative font-main text-base font-medium text-black group">
+                    <Link to={'/ContactPage'} className="relative font-main text-base font-medium text-black group">
                     Contact
                     <span
                         className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>

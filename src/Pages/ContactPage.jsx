@@ -2,6 +2,7 @@ import React from 'react'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 import { IoTime } from 'react-icons/io5'
+import { Link } from 'react-router'
 
 const ContactPage = () => {
 return (
@@ -20,7 +21,7 @@ return (
 
 
 
-            <div>
+            <div className='flex justify-around mt-[130px]'>
 
                 {/* -left side--- */}
 
@@ -51,19 +52,79 @@ return (
                     </div>
                     {/* timee */}
 
-    <div className='flex gap-4.5 mt-11  '>
+                    <div className='flex gap-4.5 mt-11  '>
                         <IoTime className='text-black text-xl mt-1.5' />
 
                         <div>
                             <h2 className='text-[24px] font-medium font-main text-black'>Working Time</h2>
-                            <p className='text-base font-main font-normal text-black w-[212px]'>Monday-Friday: 9:00 - 22:00
+                            <p className='text-base font-main font-normal text-black w-[212px]'>Monday-Friday: 9:00 -
+                                22:00
 
                             </p>
-                            <p className='text-base font-main font-normal text-black w-[212px]'>Saturday-Sunday: 9:00 - 21:00
+                            <p className='text-base font-main font-normal text-black w-[212px]'>Saturday-Sunday: 9:00 -
+                                21:00
                             </p>
                         </div>
                     </div>
 
+
+
+
+
+                </div>
+
+
+                {/* -right side--- */}
+                <div>
+
+                    {/* -name */}
+                    <div>
+                        <h2 className='text-base text-black font-main font-medium '>Your name</h2>
+                        <input type="text"
+                            className='py-5  border border-[#9f9f9fc3] w-[528px] rounded-[10px] mt-6 outline-none text-[#000000cd] text-base font-main font-medium pl-5 '
+                            placeholder='Your Name' />
+                    </div>
+
+
+                    {/* -email-- */}
+
+                    <div className='mt-9'>
+                        <h2 className='text-base text-black font-main font-medium '>Email address</h2>
+                        <input type="text"
+                            className='py-5  border border-[#9f9f9fc3] w-[528px] rounded-[10px] mt-6 outline-none text-[#000000cd] text-base font-main font-medium pl-5 '
+                            placeholder='Your Email Address' />
+                    </div>
+
+                    {/* subjecttt */}
+
+
+                    <div className='mt-9'>
+                        <h2 className='text-base text-black font-main font-medium '>Subject</h2>
+                        <input type="text"
+                            className='py-5  border border-[#9f9f9fc3] w-[528px] rounded-[10px] mt-6 outline-none text-[#000000cd] text-base font-main font-medium pl-5 '
+                            placeholder='This is an optional' />
+                    </div>
+
+
+                    {/* --masseg-- */}
+
+
+                    <div className='mt-9 mb-13'>
+                        <h2 className='text-base text-black font-main font-medium '>Message</h2>
+                        <input type="text"
+                            className='pt-5 pb-23 border border-[#9f9f9fc3] w-[528px] rounded-[10px] mt-6 outline-none text-[#000000cd] text-base font-main font-medium pl-5 '
+                            placeholder='This is an optional' />
+                    </div>
+
+
+
+
+                    {/* ---sub btn-- */}
+                    <div>
+                        <Link
+                            className='py-[12px] px-[89px] border border-[#9f9f9fc3] rounded-[15px] text-base text-black font-main font-medium  hover:bg-purple-200 duration-300'>
+                        Sbumit</Link>
+                    </div>
 
 
 
