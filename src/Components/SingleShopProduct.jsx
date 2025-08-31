@@ -8,7 +8,7 @@ const SingleShopProduct = () => {
     
     
     <section>
-        <div className="container"></div>
+        <div className="container">
 
         <div className='w-[287px]'>
             <div>
@@ -16,6 +16,7 @@ const SingleShopProduct = () => {
             </div>
             <h2></h2>
             <p></p>
+        </div>
         </div>
     </section>
     
