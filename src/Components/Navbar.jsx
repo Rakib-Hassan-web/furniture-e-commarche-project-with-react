@@ -4,10 +4,13 @@ import { FiSearch } from 'react-icons/fi'
 import { GoHeart } from 'react-icons/go'
 import { LuUserCheck } from 'react-icons/lu'
 import { Link } from 'react-router'
+import Cart from './Cart'
 
 const Navbar = () => {
 return (
 <>
+
+
 
     <nav id='navbar' className='bg-[#FBEBB5] py-9.5'>
         <div className="container">
@@ -83,6 +86,7 @@ return (
 
     </nav>
 
+<Cart/>
 </>
 )
 }
