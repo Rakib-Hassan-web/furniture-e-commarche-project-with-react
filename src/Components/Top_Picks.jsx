@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
+import Slider from 'react-slick';
 const Top_Picks = () => {
 
 
@@ -12,15 +13,54 @@ const Top_Picks = () => {
 
 
 
-    const [product ,  setproduct ] =useState('')
+    const [product ,  setproduct ] =useState([])
     
 
 
     useEffect(()=>{
-      axios.get('https://api.escuelajs.co/api/v1/categories')
-      .then((res) => console.log(res.data))  
+      axios.get('https://api.escuelajs.co/api/v1/products')
+      .then((res) =>{setproduct(res.data)})  
       .catch((error)=> console.log('error dichhe'))
     },[])
+
+  
+
+
+
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
    
 return (
@@ -35,10 +75,29 @@ return (
 
 
             <div className='flex items-center justify-between'>
+                {/* <Single_picks />
                 <Single_picks />
                 <Single_picks />
-                <Single_picks />
-                <Single_picks />
+                <Single_picks /> */}
+
+
+
+ <div className="slider-container flex items-center gap-25 flex-wrap">
+      {/* <Slider {...settings}> */}
+     
+     {
+        product.map((item ,i )=>{
+        //   return  console.log(item.price)
+              return ( <Single_picks key={i} proimage={item.images[0]} protitle={item.title} proprice={item.price}/>)
+
+        })
+     }
+      {/* </Slider> */}
+    </div>
+
+
+   
+
             </div>
             <div className='text-center'>
                 <Link to={'/Shop'}  className='text-[20px] font-medium font-main text-black border-b-2  '>View More</Link>
