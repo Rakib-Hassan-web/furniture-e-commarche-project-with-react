@@ -1,7 +1,8 @@
 import React from 'react'
 import Single_picks from './Single_picks'
 import { Link } from 'react-router'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Top_Picks = () => {
 return (
 <>
