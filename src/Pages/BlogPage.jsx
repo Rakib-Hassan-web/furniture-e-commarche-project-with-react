@@ -95,6 +95,7 @@ export default function BlogPage() {
           </div>
         </div>
       ))}
+      <h2>hgi</h2>
     </div>
     </>
   );
