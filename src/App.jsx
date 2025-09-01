@@ -11,6 +11,8 @@ import LoginPage from './Pages/LoginPage'
 import Registerpage from './Pages/Registerpage'
 import ContactPage from './Pages/ContactPage'
 import CheckOutPage from './Pages/CheckOutPage'
+import BlogPage from './Pages/BlogPage'
+import AboutPage from './Pages/AboutPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +30,8 @@ const myroute=  createBrowserRouter(createRoutesFromElements(
 <Route path='/Registerpage' element={<Registerpage/>} />
 <Route path='/ContactPage' element={<ContactPage/>} />
 <Route path='/CheckOutPage' element={<CheckOutPage/>} />
+<Route path='/BlogPage' element={<BlogPage/>} />
+<Route path='/AboutPage' element={<AboutPage/>} />
 
 
 

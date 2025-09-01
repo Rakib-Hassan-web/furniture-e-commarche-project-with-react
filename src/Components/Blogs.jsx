@@ -105,7 +105,7 @@ return (
 
 
             <div className='text-center'>
-                <Link className='text-[20px] font-medium font-main text-black border-b-2  '>View More</Link>
+                <Link to={'/BlogPage'} className='text-[20px] font-medium font-main text-black border-b-2  '>View More</Link>
             </div>
 
 
