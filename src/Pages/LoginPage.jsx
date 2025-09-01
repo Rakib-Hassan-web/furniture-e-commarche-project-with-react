@@ -3,12 +3,25 @@ import { LuEye, LuEyeOff } from "react-icons/lu";
 import { Link } from "react-router";
 import bredImg from '../assets/images/Rectangle 1.png'
 import bredlogo from '../assets/images/Breadcrumblogo.png'
+import BreadCrumb from "../Components/BreadCrumb";
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <>
+       <div className='w-[2000px] h-[316px]'>
+            <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
+            <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
+
+                <div>
+                    <img src={bredlogo} alt="" />
+                </div>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Contact</h2>
+
+            <BreadCrumb BreadLink={'/Shop'} BreadContent={'AllProducts'} />
+            </div>
+        </div>
     <div className="flex justify-center items-center py-30">
       <div className="w-full max-w-sm bg-white p-12 rounded-lg shadow-sm">
         {/* Title */}
