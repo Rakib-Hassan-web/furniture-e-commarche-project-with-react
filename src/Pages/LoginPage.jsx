@@ -22,6 +22,7 @@ export default function LoginPage() {
             <BreadCrumb BreadLink={'/LoginPage'} BreadContent={'LoginPage'} />
             </div>
         </div>
+        <h2>hi</h2>
     <div className="flex justify-center items-center py-30">
       <div className="w-full max-w-sm bg-white p-12 rounded-lg shadow-sm">
         {/* Title */}
