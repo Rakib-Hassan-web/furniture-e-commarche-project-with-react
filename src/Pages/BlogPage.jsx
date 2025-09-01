@@ -4,6 +4,7 @@ import { FaUser, FaCalendarAlt, FaTags } from "react-icons/fa";
 import bredImg from '../assets/images/Rectangle 1.png'
 import bredlogo from '../assets/images/Breadcrumblogo.png'
 import BreadCrumb from "../Components/BreadCrumb";
+import { Link } from "react-router";
 
 const blogs = [
   {
@@ -69,7 +70,7 @@ export default function BlogPage() {
           />
           <div className="p-6 space-y-4">
             {/* Meta info */}
-            <div className="flex items-center gap-6 text-sm text-gray-500">
+            <div className="flex items-center gap-6 text-sm text-gray-500 font-main">
               <span className="flex items-center gap-2">
                 <FaUser /> {blog.author}
               </span>
@@ -82,15 +83,15 @@ export default function BlogPage() {
             </div>
 
             {/* Title */}
-            <h2 className="text-xl font-semibold">{blog.title}</h2>
+            <h2 className="text-xl font-semibold font-main">{blog.title}</h2>
 
             {/* Description */}
-            <p className="text-gray-600">{blog.desc}</p>
+            <p className="text-gray-600 font-main">{blog.desc}</p>
 
             {/* Button */}
-            <button className="text-blue-600 hover:underline font-medium">
+            <Link  className="text-blue-600 hover:underline font-medium font-main">
               Read more
-            </button>
+            </Link>
           </div>
         </div>
       ))}
