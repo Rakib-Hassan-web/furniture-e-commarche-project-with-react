@@ -7,11 +7,11 @@ const BreadCrumb = ({BreadLink ,BreadContent}) => {
     <>
 
 
-    <div>
-        <Link to={'/'} >Home</Link>
-        <FaArrowRightLong />
+    <div className='flex items-center gap-2.5 mb-'>
+        <Link to={'/'} className='text-base text-black font-medium font-main' >Home</Link>
+        <FaArrowRightLong  className='text-base'/>
      
-     <Link  to={BreadLink}>{BreadContent}</Link>
+     <Link   className='text-base text-black font-medium font-main' to={BreadLink}>{BreadContent}</Link>
 
 
     </div>

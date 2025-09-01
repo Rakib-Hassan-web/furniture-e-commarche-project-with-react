@@ -4,14 +4,27 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { IoTime } from 'react-icons/io5'
 import { Link } from 'react-router'
 import BreadCrumb from '../Components/BreadCrumb'
+import bredImg from '../assets/images/Rectangle 1.png'
+import bredlogo from '../assets/images/Breadcrumblogo.png'
 
 const ContactPage = () => {
 return (
 <>
 
     <section id='contactPage'>
+        <div className='w-[2000px] h-[316px]'>
+            <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
+            <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
+
+                <div>
+                    <img src={bredlogo} alt="" />
+                </div>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Contact</h2>
+
+            <BreadCrumb BreadLink={'/ContactPage'} BreadContent={'ContactPage'} />
+            </div>
+        </div>
         <div className="container pt-[98px] bg-white pb-18">
-            <BreadCrumb />
             {/* ---header--- */}
             <h2 className='text-[36px] font-medium font-main text-black text-center'>Get In Touch With Us</h2>
             <div className='flex justify-center'>
