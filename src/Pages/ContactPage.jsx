@@ -3,6 +3,7 @@ import { FaPhoneAlt } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 import { IoTime } from 'react-icons/io5'
 import { Link } from 'react-router'
+import BreadCrumb from '../Components/BreadCrumb'
 
 const ContactPage = () => {
 return (
@@ -10,6 +11,7 @@ return (
 
     <section id='contactPage'>
         <div className="container pt-[98px] bg-white pb-18">
+            <BreadCrumb />
             {/* ---header--- */}
             <h2 className='text-[36px] font-medium font-main text-black text-center'>Get In Touch With Us</h2>
             <div className='flex justify-center'>
