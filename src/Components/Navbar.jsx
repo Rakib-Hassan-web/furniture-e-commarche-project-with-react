@@ -29,7 +29,7 @@ return (
                     </Link>
 
 
-                    <Link className="relative font-main text-base font-medium text-black group">
+                    <Link to={'/Shop'} className="relative font-main text-base font-medium text-black group">
                     Shop
                     <span
                         className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
