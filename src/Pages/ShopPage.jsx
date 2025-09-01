@@ -4,6 +4,9 @@ import SingleShopProduct from '../Components/SingleShopProduct'
 import Single_picks from '../Components/Single_picks'
 import Pagination from '../Components/Pagination'
 import ProductDetailsPage from './ProductDetailsPage'
+import BreadCrumb from '../Components/BreadCrumb'
+import bredImg from '../assets/images/Rectangle 1.png'
+import bredlogo from '../assets/images/Breadcrumblogo.png'
 
 const ShopPage = () => {
   const [products, setProducts] = useState([]);
@@ -28,6 +31,18 @@ return (
 <>
 
   <section>
+     <div className='w-[2000px] h-[316px]'>
+            <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
+            <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
+
+                <div>
+                    <img src={bredlogo} alt="" />
+                </div>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Contact</h2>
+
+            <BreadCrumb BreadLink={'/Shop'} BreadContent={'AllProducts'} />
+            </div>
+        </div>
     <div className="container">
       <div className='flex items-center flex-wrap  justify-around  '>
         {
@@ -42,7 +57,7 @@ return (
   </section>
 
 
-<ProductDetailsPage/>
+{/* <ProductDetailsPage/> */}
 
 
 
