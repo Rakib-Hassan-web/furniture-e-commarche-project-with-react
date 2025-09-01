@@ -1,6 +1,10 @@
 import React from "react";
 import { FaUser, FaCalendarAlt, FaTags } from "react-icons/fa";
 
+import bredImg from '../assets/images/Rectangle 1.png'
+import bredlogo from '../assets/images/Breadcrumblogo.png'
+import BreadCrumb from "../Components/BreadCrumb";
+
 const blogs = [
   {
     id: 1,
@@ -33,6 +37,20 @@ const blogs = [
 
 export default function BlogPage() {
   return (
+<>
+       <div className='w-[2000px] h-[316px]'>
+            <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
+            <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
+
+                <div>
+                    <img src={bredlogo} alt="" />
+                </div>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Blogs</h2>
+
+            <BreadCrumb BreadLink={'/BlogPage'} BreadContent={'BlogPage'} />
+            </div>
+        </div>
+
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-10">
       {blogs.map((blog) => (
         <div
@@ -72,5 +90,6 @@ export default function BlogPage() {
         </div>
       ))}
     </div>
+    </>
   );
 }

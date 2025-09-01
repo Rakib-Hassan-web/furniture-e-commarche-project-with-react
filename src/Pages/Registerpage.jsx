@@ -13,7 +13,7 @@ export default function RegisterPage() {
                 <div>
                     <img src={bredlogo} alt="" />
                 </div>
-                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Contact</h2>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Register</h2>
 
             <BreadCrumb BreadLink={'/Registerpage'} BreadContent={'RegisterPage'} />
             </div>

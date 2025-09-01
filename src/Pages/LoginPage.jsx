@@ -17,7 +17,7 @@ export default function LoginPage() {
                 <div>
                     <img src={bredlogo} alt="" />
                 </div>
-                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Contact</h2>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Login</h2>
 
             <BreadCrumb BreadLink={'/LoginPage'} BreadContent={'LoginPage'} />
             </div>
