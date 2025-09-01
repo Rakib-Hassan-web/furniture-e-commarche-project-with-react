@@ -19,7 +19,7 @@ export default function LoginPage() {
                 </div>
                 <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Contact</h2>
 
-            <BreadCrumb BreadLink={'/Shop'} BreadContent={'AllProducts'} />
+            <BreadCrumb BreadLink={'/LoginPage'} BreadContent={'LoginPage'} />
             </div>
         </div>
     <div className="flex justify-center items-center py-30">
