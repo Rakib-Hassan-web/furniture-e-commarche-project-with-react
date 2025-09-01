@@ -6,7 +6,12 @@ import BreadCrumb from "../Components/BreadCrumb";
 
 export default function RegisterPage() {
   return (
-    <>       <div className='w-[2000px] h-[316px]'>
+    <> 
+
+    {/* ------------breadcrumb st----------- */}
+
+    
+          <div className='w-[2000px] h-[316px]'>
             <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
             <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
 
@@ -18,6 +23,10 @@ export default function RegisterPage() {
             <BreadCrumb BreadLink={'/Registerpage'} BreadContent={'RegisterPage'} />
             </div>
         </div>
+
+
+        {/* ------------breadcrumb end----------- */}
+
     <div className="flex justify-center items-center py-15 bg-gray-50">
       <div className="w-full max-w-sm  p-8 rounded-lg ">
         {/* Title */}

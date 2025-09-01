@@ -10,6 +10,8 @@ const CheckOutPage = () => {
     
     
     <section id='checkout'>
+      {/* ------------breadcrumb st----------- */}
+
         <div className='w-[2000px] h-[316px]'>
             <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
             <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
@@ -22,7 +24,8 @@ const CheckOutPage = () => {
             <BreadCrumb BreadLink={'/CheckOutPage'} BreadContent={'CheckOutPage'} />
             </div>
         </div>
-   
+   {/* ------------breadcrumb end----------- */}
+
         <div className="container">
             <div id='checkout-row' className='flex justify-around pb-[52px] pt-[97px] '>
                 {/* ----------------- left-side */}

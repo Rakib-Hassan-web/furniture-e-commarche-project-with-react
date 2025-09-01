@@ -38,6 +38,8 @@ const blogs = [
 export default function BlogPage() {
   return (
 <>
+{/* ------------breadcrumb st----------- */}
+
        <div className='w-[2000px] h-[316px]'>
             <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
             <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
@@ -50,6 +52,9 @@ export default function BlogPage() {
             <BreadCrumb BreadLink={'/BlogPage'} BreadContent={'BlogPage'} />
             </div>
         </div>
+
+        {/* ------------breadcrumb end----------- */}
+
 
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-10">
       {blogs.map((blog) => (

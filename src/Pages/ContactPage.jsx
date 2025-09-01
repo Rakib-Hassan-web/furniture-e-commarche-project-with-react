@@ -12,6 +12,8 @@ return (
 <>
 
     <section id='contactPage'>
+        {/* ------------breadcrumb st----------- */}
+
         <div className='w-[2000px] h-[316px]'>
             <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
             <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
@@ -24,6 +26,8 @@ return (
             <BreadCrumb BreadLink={'/ContactPage'} BreadContent={'ContactPage'} />
             </div>
         </div>
+        {/* ------------breadcrumb end----------- */}
+
         <div className="container pt-[98px] bg-white pb-18">
             {/* ---header--- */}
             <h2 className='text-[36px] font-medium font-main text-black text-center'>Get In Touch With Us</h2>

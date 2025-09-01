@@ -31,6 +31,8 @@ return (
 <>
 
   <section>
+    {/* ------------breadcrumb st----------- */}
+
      <div className='w-[2000px] h-[316px]'>
             <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
             <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
@@ -43,6 +45,9 @@ return (
             <BreadCrumb BreadLink={'/Shop'} BreadContent={'AllProducts'} />
             </div>
         </div>
+
+        {/* ------------breadcrumb end----------- */}
+
     <div className="container">
       <div className='flex items-center flex-wrap  justify-around  '>
         {
