@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { LuEye, LuEyeOff } from "react-icons/lu";
 import { Link } from "react-router";
+import bredImg from '../assets/images/Rectangle 1.png'
+import bredlogo from '../assets/images/Breadcrumblogo.png'
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
+    <>
     <div className="flex justify-center items-center py-30">
       <div className="w-full max-w-sm bg-white p-12 rounded-lg shadow-sm">
         {/* Title */}
@@ -62,5 +65,6 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
