@@ -15,7 +15,7 @@ export default function RegisterPage() {
                 </div>
                 <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>Contact</h2>
 
-            <BreadCrumb BreadLink={'/Shop'} BreadContent={'AllProducts'} />
+            <BreadCrumb BreadLink={'/Registerpage'} BreadContent={'RegisterPage'} />
             </div>
         </div>
     <div className="flex justify-center items-center py-15 bg-gray-50">
