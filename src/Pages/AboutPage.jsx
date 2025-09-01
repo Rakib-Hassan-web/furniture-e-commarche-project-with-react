@@ -1,8 +1,24 @@
 import React from "react";
 import { FaBullseye, FaEye, FaHeart } from "react-icons/fa";
+import BreadCrumb from "../Components/BreadCrumb";
+import bredImg from '../assets/images/Rectangle 1.png'
+import bredlogo from '../assets/images/Breadcrumblogo.png'
 
 export default function AboutPage() {
   return (
+<>
+    <div className='w-[2000px] h-[316px]'>
+            <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
+            <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
+
+                <div>
+                    <img src={bredlogo} alt="" />
+                </div>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>About</h2>
+
+            <BreadCrumb BreadLink={'/AboutPage'} BreadContent={'AboutPage'} />
+            </div>
+        </div>
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
       <section className="text-center py-16 px-6 bg-[#FBEBB5] text-black">
@@ -87,5 +103,6 @@ export default function AboutPage() {
         </button>
       </section>
     </div>
+    </>
   );
 }

@@ -1,5 +1,8 @@
 import React from 'react'
+import BreadCrumb from '../Components/BreadCrumb'
 
+import bredImg from '../assets/images/Rectangle 1.png'
+import bredlogo from '../assets/images/Breadcrumblogo.png'
 
 const CheckOutPage = () => {
   return (
@@ -7,6 +10,18 @@ const CheckOutPage = () => {
     
     
     <section id='checkout'>
+        <div className='w-[2000px] h-[316px]'>
+            <img src={bredImg} alt="bredbg" className=' w-[2000px] h-[316px] relative' />
+            <div className=' absolute top-[20%] right-[45%] flex flex-col items-center  z-20'>
+
+                <div>
+                    <img src={bredlogo} alt="" />
+                </div>
+                <h2 className='text-[48px] font-medium text-black font-main mt-[-20px]'>CheckOut</h2>
+
+            <BreadCrumb BreadLink={'/CheckOutPage'} BreadContent={'CheckOutPage'} />
+            </div>
+        </div>
    
         <div className="container">
             <div id='checkout-row' className='flex justify-around pb-[52px] pt-[97px] '>
