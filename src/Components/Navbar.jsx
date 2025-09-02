@@ -19,10 +19,10 @@ return (
     <nav id='navbar' className='bg-[#FBEBB5] py-9.5'>
         <div className="container">
             <div>
-                <Link to={'/'}> RAKIB</Link> </div> <div className=' flex items-center justify-between'>
+                <Link to={'/'}> </Link> </div> <div className=' flex items-center justify-between'>
                 {/* -----items--- */}
                 <div className='pl-[450px] flex items-center gap-[75px]  '>
-                    <Link to={'/CheckOutPage'} className="relative font-main text-base font-medium text-black group">
+                    <Link to={'/'} className="relative font-main text-base font-medium text-black group">
                     Home
                     <span
                         className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>

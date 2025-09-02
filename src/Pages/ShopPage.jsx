@@ -7,15 +7,18 @@ import ProductDetailsPage from './ProductDetailsPage'
 import BreadCrumb from '../Components/BreadCrumb'
 import bredImg from '../assets/images/Rectangle 1.png'
 import bredlogo from '../assets/images/Breadcrumblogo.png'
+import { useNavigate, useParams } from 'react-router'
 
 const ShopPage = () => {
+  const perams = useParams();
+  const navigate =useNavigate()
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
   const itemsPerPage = 10;
 
   useEffect(() => {
     axios
-      .get("https://api.escuelajs.co/api/v1/products")
+      .get(`https://api.escuelajs.co/api/v1/products/`)
       .then((res) => {
         setProducts(res.data);
       })
@@ -23,6 +26,25 @@ const ShopPage = () => {
         console.log(err);
       });
   }, []);
+
+  const hanldeDetails =(ProInfo)=>{
+    console.log('kaj kore')
+ 
+
+    
+  }
+
+
+
+  //   useEffect(() => {
+  //   axios
+  //     .get(`https://api.escuelajs.co/api/v1/products/${perams.proIds}`)
+  //     .then((res) => { console.log(res.data); })
+  //     .catch((error) => console.log("error dichhe", error));
+  // }, []);
+
+  // console.log(products)
+  
 
   const start = (page - 1) * itemsPerPage;
   const currentItems = products.slice(start, start + itemsPerPage);
@@ -52,7 +74,7 @@ return (
       <div className='flex items-center flex-wrap  justify-around  '>
         {
         currentItems.map((item ,i )=>(
-        <Single_picks key={i} proimage={item.images[0]} protitle={item.title} proprice={item.price} />
+        <Single_picks key={i}  CartClick={()=>hanldeDetails(item)} proimage={item.images[0]} protitle={item.title} proprice={item.price} />
         ))
         }
       </div>
