@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { useParams } from "react-router";
 
 export default function ProductPage() {
     const [product ,  setproduct ] =useState([])
 
-    const
+    const perams =useParams()
   
   const [selectedImage, setSelectedImage] = useState(
     "https://i.ibb.co/6FpmPQ5/sofa1.png"
