@@ -81,12 +81,12 @@ export default function ProductPage() {
 
           {/* Size Options */}
           <div>
-            <h2 className="font-semibold mb-2">Size</h2>
+            <h2 className="font-semibold mb-2 font-main">Size</h2>
             <div className="flex gap-3">
               {["L", "XL", "XS"].map((size) => (
                 <button
                   key={size}
-                  className="px-4 py-2 border rounded-lg hover:bg-black hover:text-white transition"
+                  className="px-4 py-2 border rounded-lg hover:bg-black hover:text-white transition duration-300 font-main cursor-pointer"
                 >
                   {size}
                 </button>
