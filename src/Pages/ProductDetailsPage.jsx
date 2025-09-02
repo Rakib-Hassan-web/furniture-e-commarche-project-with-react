@@ -137,7 +137,7 @@ export default function ProductPage() {
       </div>
     </div>
       <Top_Picks/>
-      <h2>hi</h2>
+     
       </>
   );
 }
