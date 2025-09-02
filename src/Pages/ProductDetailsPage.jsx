@@ -4,66 +4,63 @@ import { FaStar } from "react-icons/fa";
 import { useParams } from "react-router";
 
 export default function ProductPage() {
-    const [product ,  setproduct ] =useState([])
+  const [product, setproduct] = useState({});
+  const perams = useParams();
 
-    const perams =useParams()
-  
-  const [selectedImage, setSelectedImage] = useState(
-    "https://i.ibb.co/6FpmPQ5/sofa1.png"
-  );
+  const [selectedImage, setSelectedImage] = useState(null);
   const [quantity, setQuantity] = useState(1);
 
-  const images = [
-    "https://i.ibb.co/6FpmPQ5/sofa1.png",
-    "https://i.ibb.co/Wf1RV4F/sofa2.png",
-    "https://i.ibb.co/3kYF5k7/sofa3.png",
-    "https://i.ibb.co/Npb4GZc/sofa4.png",
-  ];
+  useEffect(() => {
+    axios
+      .get(`https://api.escuelajs.co/api/v1/products/${perams.proIds}`)
+      .then((res) => {
+        setproduct(res.data);
+        setSelectedImage(res.data.images[0]); // প্রথম ইমেজকে default সেট করলাম
+      })
+      .catch((error) => console.log("error dichhe", error));
+  }, [perams.proIds]);
 
-
-   useEffect(()=>{
-    axios.get('https://api.escuelajs.co/api/v1/products')
-    .then((res) =>{setproduct(res.data)})  
-    .catch((error)=> console.log('error dichhe'))
-  },[])
-
-
-  console.log(product)
+  console.log(product);
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-10">
+    <div className="min- bg-white flex  justify-center py-30 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl w-full">
         {/* Left Side - Images */}
         <div className="flex gap-4">
           {/* Thumbnails */}
           <div className="flex flex-col gap-4">
-            {images.map((img, idx) => (
-              <img
-                key={idx}
-                src={img}
-                alt="sofa"
-                className={`w-20 h-20 rounded-xl cursor-pointer border ${
-                  selectedImage === img ? "border-gray-800" : "border-gray-200"
-                }`}
-                onClick={() => setSelectedImage(img)}
-              />
-            ))}
+            {product.images &&
+              product.images.map((img, idx) => (
+                <img
+                  key={idx}
+                  src={img}
+                  alt="sofa"
+                  className={`w-20 h-20 rounded-xl cursor-pointer border ${
+                    selectedImage === img
+                      ? "border-gray-800"
+                      : "border-gray-200"
+                  }`}
+                  onClick={() => setSelectedImage(img)}
+                />
+              ))}
           </div>
           {/* Main Image */}
           <div className="flex-1">
-            <img
-              src={selectedImage}
-              alt="sofa-main"
-              className="rounded-2xl shadow-lg"
-            />
+            {selectedImage && (
+              <img
+                src={selectedImage}
+                alt="sofa-main"
+                className="rounded-2xl shadow-lg"
+              />
+            )}
           </div>
         </div>
 
         {/* Right Side - Product Details */}
         <div className="space-y-5">
-          <h1 className="text-3xl font-bold">Asgaard sofa</h1>
+          <h1 className="text-3xl font-bold">{product.title}</h1>
           <p className="text-2xl font-semibold text-gray-700">
-            Rs. 250,000.00
+            Rs. {product.price}
           </p>
 
           {/* Review */}
@@ -76,11 +73,7 @@ export default function ProductPage() {
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 text-sm">
-            Setting the bar as one of the loudest speakers in its class, 
-            the Kilburn is a compact, stout-hearted hero with a well-balanced 
-            audio which boasts a clear midrange and extended highs for a sound.
-          </p>
+          <p className="text-gray-600 text-sm">{product.description}</p>
 
           {/* Size Options */}
           <div>
