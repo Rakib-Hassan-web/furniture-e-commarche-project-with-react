@@ -15,7 +15,7 @@ export default function ProductPage() {
       .get(`https://api.escuelajs.co/api/v1/products/${perams.proIds}`)
       .then((res) => {
         setproduct(res.data);
-        setSelectedImage(res.data.images[0]); // প্রথম ইমেজকে default সেট করলাম
+        setSelectedImage(res.data.images[0]); 
       })
       .catch((error) => console.log("error dichhe", error));
   }, [perams.proIds]);
@@ -58,9 +58,9 @@ export default function ProductPage() {
 
         {/* Right Side - Product Details */}
         <div className="space-y-5">
-          <h1 className="text-3xl font-bold">{product.title}</h1>
+          <h1 className="text-3xl font-bold font-main">{product.title}</h1>
           <p className="text-2xl font-semibold text-gray-700">
-            Rs. {product.price}
+            Price : {product.price}$
           </p>
 
           {/* Review */}
