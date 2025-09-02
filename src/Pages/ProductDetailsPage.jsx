@@ -59,7 +59,7 @@ export default function ProductPage() {
         {/* Right Side - Product Details */}
         <div className="space-y-5">
           <h1 className="text-3xl font-bold font-main">{product.title}</h1>
-          <p className="text-2xl font-semibold text-gray-700">
+          <p className="text-2xl font-semibold text-gray-700 font-main">
             Price : {product.price}$
           </p>
 
