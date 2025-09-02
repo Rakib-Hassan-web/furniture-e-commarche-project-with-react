@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Single_picks from './Single_picks'
-import { Link } from 'react-router-dom'   // ✅ এখানে ঠিক করলাম
+import { Link, useNavigate } from 'react-router-dom'   // ✅ এখানে ঠিক করলাম
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
 import Slider from 'react-slick';
+import ProductDetailsPage from '../Pages/ProductDetailsPage';
 
 const Top_Picks = () => {
+  const navigate =useNavigate()
   const [product ,  setproduct ] =useState([])
 
   useEffect(()=>{
@@ -54,6 +56,7 @@ const Top_Picks = () => {
 
   const hanldeDetails =()=>{
     console.log('hea click hoy')
+    navigate('/ProductDetailsPage')
   }
 
   return (
@@ -89,6 +92,8 @@ const Top_Picks = () => {
         </div>
       </div>
     </section>
+
+    
   )
 }
 

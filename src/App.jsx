@@ -13,6 +13,7 @@ import ContactPage from './Pages/ContactPage'
 import CheckOutPage from './Pages/CheckOutPage'
 import BlogPage from './Pages/BlogPage'
 import AboutPage from './Pages/AboutPage'
+import ProductDetailsPage from './Pages/ProductDetailsPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,7 @@ const myroute=  createBrowserRouter(createRoutesFromElements(
 <Route path='/CheckOutPage' element={<CheckOutPage/>} />
 <Route path='/BlogPage' element={<BlogPage/>} />
 <Route path='/AboutPage' element={<AboutPage/>} />
+<Route path='/ProductDetailsPage' element={<ProductDetailsPage/>} />
 
 
 
