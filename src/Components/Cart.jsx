@@ -51,7 +51,7 @@ return (
 
           <div className='w-full border-b  border-1 border-[#D9D9D9] flex  m-auto mt-[26px]'></div>
           <div className=' flex justify-center'>
-          <Link className='w-[200px] bg-black py-5 mt-[26px] flex items-center justify-center rounded-full hover:bg-green-400 duration-300 text-white hover '>
+          <Link to={'/CheckOutPage'} className='w-[200px] bg-black py-5 mt-[26px] flex items-center justify-center rounded-full hover:bg-green-400 duration-300 text-white hover:text-black '>
             <h2 className='text-[20px] font-main font-normal  '>Checkout</h2>
 
           </Link>
