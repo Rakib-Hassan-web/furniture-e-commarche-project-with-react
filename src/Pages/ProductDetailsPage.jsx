@@ -127,7 +127,7 @@ export default function ProductPage() {
               </button>
             </div>
 
-            <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+            <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-green-400  hover:scale-[1.1]  hover:text-black transition font-main">
               Add To Cart
             </button>
           </div>
