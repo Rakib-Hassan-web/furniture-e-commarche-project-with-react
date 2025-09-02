@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 
-export default function ProductDetailsPage() {
+export default function ProductPage() {
+    const [product ,  setproduct ] =useState([])
+
+    const
+  
   const [selectedImage, setSelectedImage] = useState(
     "https://i.ibb.co/6FpmPQ5/sofa1.png"
   );
@@ -13,6 +18,16 @@ export default function ProductDetailsPage() {
     "https://i.ibb.co/3kYF5k7/sofa3.png",
     "https://i.ibb.co/Npb4GZc/sofa4.png",
   ];
+
+
+   useEffect(()=>{
+    axios.get('https://api.escuelajs.co/api/v1/products')
+    .then((res) =>{setproduct(res.data)})  
+    .catch((error)=> console.log('error dichhe'))
+  },[])
+
+
+  console.log(product)
 
   return (
     <div className="min-h-screen bg-white flex items-center justify-center p-10">

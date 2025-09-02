@@ -33,7 +33,7 @@ const myroute=  createBrowserRouter(createRoutesFromElements(
 <Route path='/CheckOutPage' element={<CheckOutPage/>} />
 <Route path='/BlogPage' element={<BlogPage/>} />
 <Route path='/AboutPage' element={<AboutPage/>} />
-<Route path='/ProductDetailsPage' element={<ProductDetailsPage/>} />
+<Route path='/ProductDetailsPage/:proIds' element={<ProductDetailsPage/>} />
 
 
 

@@ -54,9 +54,11 @@ const Top_Picks = () => {
     ]
   };
 
-  const hanldeDetails =()=>{
-    console.log('hea click hoy')
-    navigate('/ProductDetailsPage')
+  const hanldeDetails =(ProInfo)=>{
+    // console.log(ProInfo.id)
+    navigate(`/ProductDetailsPage/${ProInfo.id}`)
+
+    
   }
 
   return (
@@ -74,7 +76,8 @@ const Top_Picks = () => {
           <Slider {...settings}>
             {
               product.map((item ,i )=>(
-                <Single_picks  CartClick={hanldeDetails}
+                // console.log(item.id)
+                <Single_picks  CartClick={()=>hanldeDetails(item)}
                   key={i} 
                   proimage={item.images[0]} 
                   protitle={item.title} 
