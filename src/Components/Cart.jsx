@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { IoCloseCircleSharp, IoCloseSharp } from 'react-icons/io5'
+import { Link } from 'react-router'
 
 const Cart = ({closecart ,closeDiv}) => {
 
@@ -42,15 +43,18 @@ return (
         </div>
         {/* --check out----- */}
 
-        <div>
+        <div className='mt-[450px]'>
           <div className='flex items-center justify-between'>
             <h2 className='text-base font-main font-normal text-black'>Subtotal</h2>
             <h2 className='text-base font-main font-semibold text-[#B88E2F]'>Rs. 250,000.00</h2>
           </div>
 
           <div className='w-full border-b  border-1 border-[#D9D9D9] flex  m-auto mt-[26px]'></div>
-          <div>
+          <div className=' flex justify-center'>
+          <Link className='w-[200px] bg-black py-5 mt-[26px] flex items-center justify-center rounded-full hover:bg-green-400 duration-300 text-white hover '>
+            <h2 className='text-[20px] font-main font-normal  '>Checkout</h2>
 
+          </Link>
           </div>
         </div>
       </div>
