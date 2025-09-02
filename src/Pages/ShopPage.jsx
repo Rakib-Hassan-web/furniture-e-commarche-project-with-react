@@ -29,7 +29,7 @@ const ShopPage = () => {
 
   const hanldeDetails =(ProInfo)=>{
     console.log('kaj kore')
- 
+    navigate(`/ProductDetailsPage/${ProInfo.id}`)
 
     
   }
