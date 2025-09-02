@@ -1,7 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { CiCircleMinus } from "react-icons/ci";
+import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
+import { FiPlusCircle } from "react-icons/fi";
+import { GoPlusCircle } from "react-icons/go";
+import { HiOutlineMinusCircle } from "react-icons/hi";
 import { useParams } from "react-router";
 
 export default function ProductPage() {
@@ -112,7 +115,7 @@ export default function ProductPage() {
                 onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
                 className="px-4 py-2 font-main text-lg "
               >
-             <CiCircleMinus className=" text-3xl font-main  hover:text-red-500 rounded-full duration-300 cursor-pointer" />
+             <CiCircleMinus  className=" text-3xl font-main  hover:text-red-500 rounded-full duration-300 cursor-pointer" />
    
               </button>
               <span className="px-4 font-main text-lg ">{quantity}</span>
@@ -120,7 +123,7 @@ export default function ProductPage() {
                 onClick={() => setQuantity(quantity + 1)}
                 className="px-4 py-2"
               >
-                +
+               <CiCirclePlus    className=" text-3xl font-main  hover:text-green-500 rounded-full duration-300 cursor-pointer"/>
               </button>
             </div>
 
