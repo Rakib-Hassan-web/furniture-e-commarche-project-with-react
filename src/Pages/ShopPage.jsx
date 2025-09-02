@@ -8,9 +8,10 @@ import BreadCrumb from '../Components/BreadCrumb'
 import bredImg from '../assets/images/Rectangle 1.png'
 import bredlogo from '../assets/images/Breadcrumblogo.png'
 import { useNavigate, useParams } from 'react-router'
+import Top_Picks from '../Components/Top_Picks'
 
 const ShopPage = () => {
-  const perams = useParams();
+ 
   const navigate =useNavigate()
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
@@ -36,15 +37,6 @@ const ShopPage = () => {
 
 
 
-  //   useEffect(() => {
-  //   axios
-  //     .get(`https://api.escuelajs.co/api/v1/products/${perams.proIds}`)
-  //     .then((res) => { console.log(res.data); })
-  //     .catch((error) => console.log("error dichhe", error));
-  // }, []);
-
-  // console.log(products)
-  
 
   const start = (page - 1) * itemsPerPage;
   const currentItems = products.slice(start, start + itemsPerPage);
@@ -82,6 +74,8 @@ return (
     </div>
 
   </section>
+
+
 
 
 {/* <ProductDetailsPage/> */}

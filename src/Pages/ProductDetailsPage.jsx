@@ -6,6 +6,7 @@ import { FiPlusCircle } from "react-icons/fi";
 import { GoPlusCircle } from "react-icons/go";
 import { HiOutlineMinusCircle } from "react-icons/hi";
 import { useParams } from "react-router";
+import Top_Picks from "../Components/Top_Picks";
 
 export default function ProductPage() {
   const [product, setproduct] = useState({});
@@ -27,6 +28,7 @@ export default function ProductPage() {
   console.log(product);
 
   return (
+    <>
     <div className="min- bg-white flex  justify-center py-30 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl w-full">
         {/* Left Side - Images */}
@@ -134,5 +136,7 @@ export default function ProductPage() {
         </div>
       </div>
     </div>
+      <Top_Picks/>
+      </>
   );
 }
