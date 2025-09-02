@@ -52,6 +52,10 @@ const Top_Picks = () => {
     ]
   };
 
+  const hanldeDetails =()=>{
+    console.log('hea click hoy')
+  }
+
   return (
     <section id='Top_Picks' className='py-14 bg-white'>
       <div className="container">
@@ -67,7 +71,7 @@ const Top_Picks = () => {
           <Slider {...settings}>
             {
               product.map((item ,i )=>(
-                <Single_picks 
+                <Single_picks  CartClick={hanldeDetails}
                   key={i} 
                   proimage={item.images[0]} 
                   protitle={item.title} 
