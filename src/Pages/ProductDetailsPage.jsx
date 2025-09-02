@@ -65,10 +65,14 @@ export default function ProductPage() {
 
           {/* Review */}
           <div className="flex items-center gap-2">
-            {[...Array(4)].map((_, i) => (
-              <FaStar key={i} className="text-yellow-500" />
-            ))}
+            <div className="flex gap-1 font-main">
+              <FaStar  className="text-yellow-400" />
+              <FaStar  className="text-yellow-400" />
+              <FaStar  className="text-yellow-400" />
+              <FaStar  className="text-yellow-400" />
             <FaStar className="text-gray-300" />
+              </div>
+            
             <span className="text-sm text-gray-500">5 Customer Review</span>
           </div>
 
