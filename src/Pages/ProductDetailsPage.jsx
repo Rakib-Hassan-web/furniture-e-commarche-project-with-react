@@ -98,9 +98,9 @@ export default function ProductPage() {
           <div>
             <h2 className="font-semibold mb-2">Color</h2>
             <div className="flex gap-3">
-              <span className="w-7 h-7 bg-purple-400 rounded-full cursor-pointer"></span>
-              <span className="w-7 h-7 bg-black rounded-full cursor-pointer"></span>
-              <span className="w-7 h-7 bg-yellow-400 rounded-full cursor-pointer"></span>
+              <span className="w-9 h-9 bg-purple-400 rounded-full cursor-pointer"></span>
+              <span className="w-9 h-9 bg-black rounded-full cursor-pointer"></span>
+              <span className="w-9 h-9 bg-yellow-400 rounded-full cursor-pointer"></span>
             </div>
           </div>
 
