@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { CiCircleMinus } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { useParams } from "react-router";
 
@@ -86,7 +87,7 @@ export default function ProductPage() {
               {["L", "XL", "XS"].map((size) => (
                 <button
                   key={size}
-                  className="px-4 py-2 border rounded-lg hover:bg-black hover:text-white transition duration-300 font-main cursor-pointer"
+                  className="px-4 py-2 border border-[#9F9F9F] rounded-lg hover:bg-black hover:text-white transition duration-300 font-main cursor-pointer"
                 >
                   {size}
                 </button>
@@ -106,14 +107,15 @@ export default function ProductPage() {
 
           {/* Quantity + Add to Cart */}
           <div className="flex items-center gap-5">
-            <div className="flex items-center border rounded-lg">
+            <div className="flex items-center border  border-[#9F9F9F] rounded-lg">
               <button
                 onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
-                className="px-4 py-2"
+                className="px-4 py-2 font-main text-lg "
               >
-                -
+             <CiCircleMinus className=" text-3xl font-main  hover:text-red-500 rounded-full duration-300 cursor-pointer" />
+   
               </button>
-              <span className="px-4">{quantity}</span>
+              <span className="px-4 font-main text-lg ">{quantity}</span>
               <button
                 onClick={() => setQuantity(quantity + 1)}
                 className="px-4 py-2"
