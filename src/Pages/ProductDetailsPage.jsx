@@ -73,11 +73,11 @@ export default function ProductPage() {
             <FaStar className="text-gray-300" />
               </div>
             
-            <span className="text-sm text-gray-500">5 Customer Review</span>
+            <span className="text-sm text-gray-500 font-main">5 Customer Review</span>
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 text-sm">{product.description}</p>
+          <p className="text-gray-600 text-sm  font-main">{product.description}</p>
 
           {/* Size Options */}
           <div>
