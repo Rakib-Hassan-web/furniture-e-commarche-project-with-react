@@ -40,6 +40,17 @@ return (
 
           </div>
         </div>
+{/* --check out----- */}
+        <div>
+          <div>
+            <h2 className='text-base font-main font-normal text-black' >Subtotal</h2>
+            <h2 className='text-base font-main font-semibold text-[#B88E2F]'>Rs. 250,000.00</h2>
+          </div>
+
+<div>
+
+</div>
+        </div>
       </div>
     </div>
   </div>
