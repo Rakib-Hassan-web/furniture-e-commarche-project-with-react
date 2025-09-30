@@ -1,63 +1,57 @@
-import React, { useEffect, useState } from 'react'
-import Single_picks from './Single_picks'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import Single_picks from './Single_picks';
+import { Link, useNavigate } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
 import Slider from 'react-slick';
 
 const Top_Picks = () => {
-  const navigate = useNavigate()
-  const [product, setProduct] = useState([])
+  const navigate = useNavigate();
+  const [product, setProduct] = useState([]);
 
   useEffect(() => {
     axios.get('https://api.escuelajs.co/api/v1/products')
-      .then((res) => setProduct(res.data))
-      .catch((error) => console.log('error dichhe'))
-  }, [])
+      .then(res => setProduct(res.data))
+      .catch(err => console.log('API error:', err));
+  }, []);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 4, // default for md+ devices
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // autoplayspeed typo fix
+    autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // tablet
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          dots: true,
         }
       },
       {
-        breakpoint: 768, // tablet breakpoint
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 480, // mobile
+        breakpoint: 768, // mobile / sm
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         }
       }
     ]
   };
 
   const handleDetails = (ProInfo) => {
-    navigate(`/ProductDetailsPage/${ProInfo.id}`)
-  }
+    navigate(`/ProductDetailsPage/${ProInfo.id}`);
+  };
 
   return (
     <section id='Top_Picks' className='py-14 bg-white'>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 w-full">
+        {/* Title */}
         <h2 className='text-[28px] sm:text-[32px] md:text-[36px] font-medium font-main text-black text-center'>
           Top Picks For You
         </h2>
@@ -65,23 +59,23 @@ const Top_Picks = () => {
           Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights.
         </p>
 
-        {/* Slider container */}
-        <div className="slider-container mt-8">
+        {/* Slider */}
+        <div className="mt-8 w-full overflow-hidden">
           <Slider {...settings}>
-            {
-              product.map((item, i) => (
+            {product.map((item, i) => (
+              <div key={i} className="px-2 w-full">
                 <Single_picks
                   CartClick={() => handleDetails(item)}
-                  key={i}
                   proimage={item.images[0]}
                   protitle={item.title}
                   proprice={item.price}
                 />
-              ))
-            }
+              </div>
+            ))}
           </Slider>
         </div>
 
+        {/* View More */}
         <div className='text-center mt-16'>
           <Link to={'/Shop'} className='text-[16px] sm:text-[20px] font-medium font-main text-black border-b-2'>
             View More
@@ -89,7 +83,7 @@ const Top_Picks = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Top_Picks
+export default Top_Picks;
