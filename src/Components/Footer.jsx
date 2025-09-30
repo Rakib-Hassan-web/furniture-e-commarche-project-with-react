@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="container mx-auto">
 
         {/* Footer Grid */}
-        <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-4">
+        <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-4 xl:justify-start xl:gap-20">
 
           {/* Links */}
-          <div className='flex-1'>
+          <div className='flex-1 xl:pl-[500px]'>
             <h3 className="text-[#9F9F9F] font-main text-base font-medium mb-4 sm:mb-6 md:mb-8">Links</h3>
             <ul>
               <li className='mb-3 sm:mb-4 md:mb-5'>
