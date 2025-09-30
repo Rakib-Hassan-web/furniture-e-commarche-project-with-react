@@ -24,7 +24,7 @@ const NewArrival = () => {
               Asgaard sofa
             </h2>
             <Link 
-              className='text-[16px] sm:text-[20px] py-3 sm:py-4 px-8 sm:px-20 font-bold font-main text-[#000] border'
+              className='text-[16px] sm:text-[20px] py-3 sm:py-4 px-8 sm:px-20 font-bold font-main text-[#000] border hover:bg-amber-300 duration-300'
             >
               Order Now
             </Link>
