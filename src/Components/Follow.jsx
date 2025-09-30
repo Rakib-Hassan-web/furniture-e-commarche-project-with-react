@@ -15,9 +15,10 @@ const Follow = () => {
           Follow our store on Instagram
         </h3>
 
-        {/* Button */}
+        {/* Button with smooth hover */}
         <Link 
-          className='text-[14px] sm:text-[16px] md:text-[20px] py-3 sm:py-4 md:py-5 px-6 sm:px-12 md:px-20 font-normal font-main text-[#000] rounded-full bg-pink-100 shadow-[5px_5px_15px_-3px_rgba(0,_0,_0,_0.15)] inline-block'
+          className='text-[14px] sm:text-[16px] md:text-[20px] py-3 sm:py-4 md:py-5 px-6 sm:px-12 md:px-20 font-normal font-main text-[#000] rounded-full bg-pink-100 shadow-[5px_5px_15px_-3px_rgba(0,_0,_0,_0.15)] inline-block
+                     transition-all duration-300 ease-in-out hover:bg-pink-200 hover:scale-105'
         >
           Follow Us
         </Link>
