@@ -4,7 +4,10 @@ import image from '../assets/images/banner img.png'
 
 const Banner = () => {
   return (
-    <section id='banner' className='bg-[#FBEBB5] relative py-[120px] sm:py-[150px] md:py-[296px]'>
+    <section
+      id='banner'
+      className='bg-[#FBEBB5] relative py-[120px] sm:py-[130px] md:py-[296px] xl:pb-[0px]' // XL padding bottom aro komano
+    >
       <div className="container mx-auto px-4 flex flex-col-reverse sm:flex-col md:flex-row items-center md:items-start justify-between">
 
         {/* Text */}
@@ -18,7 +21,7 @@ const Banner = () => {
         </div>
 
         {/* Image */}
-        <div className='w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0 relative xl:relative xl:-top-[200px]'>
+        <div className='w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0 relative xl:-top-[200px]'>
           <img
             src={image}
             alt="BannerImg"
