@@ -20,7 +20,7 @@ const Top_Picks = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // default for md+ devices
+    slidesToShow: 4, // default for md+
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -34,7 +34,7 @@ const Top_Picks = () => {
         }
       },
       {
-        breakpoint: 768, // mobile / sm
+        breakpoint: 768, // mobile
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -51,7 +51,6 @@ const Top_Picks = () => {
   return (
     <section id='Top_Picks' className='py-14 bg-white'>
       <div className="container mx-auto px-4 w-full">
-        {/* Title */}
         <h2 className='text-[28px] sm:text-[32px] md:text-[36px] font-medium font-main text-black text-center'>
           Top Picks For You
         </h2>
@@ -60,7 +59,7 @@ const Top_Picks = () => {
         </p>
 
         {/* Slider */}
-        <div className="mt-8 w-full overflow-hidden">
+        <div className="mt-8 w-full">
           <Slider {...settings}>
             {product.map((item, i) => (
               <div key={i} className="px-2 w-full">
@@ -75,7 +74,6 @@ const Top_Picks = () => {
           </Slider>
         </div>
 
-        {/* View More */}
         <div className='text-center mt-16'>
           <Link to={'/Shop'} className='text-[16px] sm:text-[20px] font-medium font-main text-black border-b-2'>
             View More

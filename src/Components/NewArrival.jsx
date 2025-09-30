@@ -3,41 +3,31 @@ import image from '../assets/images/Asgaard sofa 1.png'
 import { Link } from 'react-router'
 
 const NewArrival = () => {
-return (
-<>
+  return (
+    <section id='NewArrival' className='bg-[#FFF9E5] py-14'>
+      <div className="container mx-auto px-4">
+        <div className='flex flex-col md:flex-row items-center md:justify-between gap-8 md:gap-0'>
+          
+          {/* Image */}
+          <div className='w-full md:w-1/2 flex justify-center md:justify-start'>
+            <img src={image} alt="Sofa Image" className='w-full max-w-[500px] md:max-w-full object-contain' />
+          </div>
 
+          {/* Texts */}
+          <div className='w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left'>
+            <h3 className='text-[20px] sm:text-[24px] font-medium font-main text-[#000]'>New Arrivals</h3>
+            <h2 className='text-[32px] sm:text-[48px] font-bold font-main text-[#000] mb-6 sm:mb-8'>Asgaard sofa</h2>
+            <Link 
+              className='text-[16px] sm:text-[20px] py-3 sm:py-4 px-8 sm:px-20 font-bold font-main text-[#000] border'
+            >
+              Order Now
+            </Link>
+          </div>
 
-
-    <section id='NewArrival' className='bg-[#FFF9E5]'>
-        <div className="container">
-            <div className='flex items-center justify-between'>
-
-                {/* image */}
-                <div>
-                    <img src={image} alt="Sofa Iamge" />
-                </div>
-
-                {/* ----texts-- */}
-                <div>
-                    <h3  className='text-[24px] font-medium font-main text-[#000] text-center '>New Arrivals</h3>
-                    <h2 className='text-[48px] font-bold font-main text-[#000] text-center mb-13 '>Asgaard sofa</h2>
-                    <div></div>
-                    <Link className='text-[20px] py-[17px] px-[75px]  font-bold font-main text-[#000] text-center border '>Order Now</Link>
-                </div>
-            </div>
         </div>
+      </div>
     </section>
-
-
-
-
-
-
-
-
-
-</>
-)
+  )
 }
 
 export default NewArrival
