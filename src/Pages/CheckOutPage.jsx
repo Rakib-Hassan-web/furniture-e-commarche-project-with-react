@@ -7,7 +7,7 @@ const CheckOutPage = () => {
   return (
     <>
       {/* ------------breadcrumb start----------- */}
-      <div className='relative w-full h-[316px] sm:h-[220px]'>
+      <div className='relative w-full h-[316px]'>
         <img src={bredImg} alt="bredbg" className='w-full h-full object-cover' />
         <div className='absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-20'>
           <img src={bredlogo} alt="" className='w-20 sm:w-16' />
@@ -19,10 +19,10 @@ const CheckOutPage = () => {
 
       <div className="container mx-auto px-4 sm:px-6 md:px-10 py-12">
 
-        <div className='flex flex-col lg:flex-row gap-12 lg:gap-8'>
+        <div className='flex flex-col xl:flex-row gap-12 xl:gap-16'>
 
           {/* Left Side - Billing Details */}
-          <div className='flex-1 flex flex-col gap-6'>
+          <div className='flex-1 flex flex-col gap-6 xl:w-[60%]'>
             <h2 className='text-2xl md:text-3xl font-semibold font-main text-black'>Billing Details</h2>
 
             <div className='flex flex-col md:flex-row gap-4'>
@@ -56,7 +56,7 @@ const CheckOutPage = () => {
           </div>
 
           {/* Right Side - Order Summary */}
-          <div className='flex-1 flex flex-col gap-6'>
+          <div className='flex-1 flex flex-col gap-6 xl:w-[35%]'>
             <div className='border-b pb-4'>
               <div className='flex justify-between items-center mb-2'>
                 <h3 className='text-lg font-medium font-main text-black'>Product</h3>
