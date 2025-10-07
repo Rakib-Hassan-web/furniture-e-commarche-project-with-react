@@ -22,7 +22,8 @@ const Navbar = () => {
             </div>
 
             {/* ----------- Nav Items ----------- */}
-            <div className='hidden md:flex items-center gap-[40px] lg:gap-[75px]'>
+            {/* ⬇ hidden সরানো হয়েছে যাতে mobile-এও দেখা যায় */}
+            <div className='flex items-center gap-4 sm:gap-[40px] lg:gap-[75px]'>
               <Link to={'/'} className="relative font-main text-sm sm:text-base font-medium text-black group">
                 Home
                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
@@ -45,7 +46,7 @@ const Navbar = () => {
             </div>
 
             {/* ----------- Icons ----------- */}
-            {/* 👉 এই অংশটা hidden করা হয়েছে ছোট ডিভাইসে */}
+            {/* ⬇ small device-এ hidden, sm থেকে visible */}
             <div className='hidden sm:flex items-center gap-4 sm:gap-6 md:gap-10'>
               <Link to={'/Registerpage'}>
                 <LuUserCheck className='text-black text-xl sm:text-2xl font-bold' />
