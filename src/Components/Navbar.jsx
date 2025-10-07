@@ -45,7 +45,8 @@ const Navbar = () => {
             </div>
 
             {/* ----------- Icons ----------- */}
-            <div className='flex items-center gap-4 sm:gap-6 md:gap-10'>
+            {/* 👉 এই অংশটা hidden করা হয়েছে ছোট ডিভাইসে */}
+            <div className='hidden sm:flex items-center gap-4 sm:gap-6 md:gap-10'>
               <Link to={'/Registerpage'}>
                 <LuUserCheck className='text-black text-xl sm:text-2xl font-bold' />
               </Link>

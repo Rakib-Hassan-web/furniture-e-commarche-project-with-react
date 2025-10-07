@@ -92,7 +92,7 @@ const CheckOutPage = () => {
             <button className='w-full md:w-auto py-4 px-8 text-base font-main text-black border rounded-lg hover:bg-amber-100 hover:scale-105 transition duration-300'>
               Place Order
             </button>
-<h2>st</h2>
+
           </div>
 
         </div>
