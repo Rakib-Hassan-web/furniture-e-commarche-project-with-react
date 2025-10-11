@@ -21,7 +21,7 @@ const CheckOutPage = () => {
 
         <div className='flex flex-col xl:flex-row gap-12 xl:gap-16'>
 
-          {/* Left Side - Billing Details */}
+          {/*----------- Left Side -------------- */}
           <div className='flex-1 flex flex-col gap-6 xl:w-[60%]'>
             <h2 className='text-2xl md:text-3xl font-semibold font-main text-black'>Billing Details</h2>
 
