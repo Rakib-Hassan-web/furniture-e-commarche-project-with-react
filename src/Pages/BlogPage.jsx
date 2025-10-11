@@ -88,7 +88,7 @@ export default function BlogPage() {
             {/* Description */}
             <p className="text-gray-600 font-main">{blog.desc}</p>
 
-            {/* Button */}
+            {/*------------ Button ----------*/}
             <Link  className="text-blue-600 hover:underline font-medium font-main">
               Read more
             </Link>
