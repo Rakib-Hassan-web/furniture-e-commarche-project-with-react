@@ -20,7 +20,7 @@ const Top_Picks = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // default for md+
+    slidesToShow: 4, 
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
