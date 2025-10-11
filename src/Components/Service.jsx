@@ -7,7 +7,7 @@ const Service = () => {
 
         <div className="flex flex-col sm:flex-col md:flex-row md:justify-between gap-8 md:gap-6 xl:gap-12">
 
-          {/* single */}
+          {/* -----------single-------------- */}
           <div className='w-full md:w-[376px] text-center md:text-left'>
             <h2 className='text-[28px] sm:text-[30px] md:text-[32px] font-main font-medium text-black mb-2'>
               Free Delivery

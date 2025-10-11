@@ -14,7 +14,7 @@ const Pagination = ({ totalPages, currentPage, setPage }) => {
 
   return (
     <div className="mb-8" style={{ marginTop: 20, textAlign: "center" } }>
-      {/* Prev */}
+     
       <button
         onClick={handlePrev}
         disabled={currentPage === 1}
