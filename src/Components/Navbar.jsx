@@ -45,7 +45,6 @@ const Navbar = () => {
               </Link>
             </div>
 
-<h2>adsfsd</h2>
             {/* ----------- Icons ----------- */}
             {/* ⬇ small device-এ hidden, sm থেকে visible */}
             <div className='hidden sm:flex items-center gap-4 sm:gap-6 md:gap-10'>
