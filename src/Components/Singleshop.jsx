@@ -7,7 +7,7 @@ const Singleshop = ({proImg , proTitle , proPrice}) => {
         <div className="container">
 
         <div className='w-[287px] h-[372px] shadow-2xl'>
-            {/* ------image--- */}
+            {/* ------image------------- */}
             <div>
                 <img src='' alt="product image" className='w-full h-[287px] bg-gray-200' />
             </div >
