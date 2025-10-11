@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <section
       id='banner'
-      className='bg-[#FBEBB5] relative py-[120px] sm:py-[130px] md:py-[296px] xl:pb-[0px]' // XL padding bottom aro komano
+      className='bg-[#FBEBB5] relative py-[120px] sm:py-[130px] md:py-[296px] xl:pb-[0px]' 
     >
       <div className="container mx-auto px-4 flex flex-col-reverse sm:flex-col md:flex-row items-center md:items-start justify-between">
 
