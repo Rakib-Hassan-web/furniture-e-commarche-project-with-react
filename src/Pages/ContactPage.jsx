@@ -64,7 +64,7 @@ const ContactPage = () => {
             </div>
           </div>
 
-          {/* Right Side - Form */}
+          {/*------------------ Right Side ------------------ */}
           <div className='lg:w-2/3 flex flex-col gap-6'>
             <div>
               <h3 className='text-base font-main font-medium text-black'>Your Name</h3>
