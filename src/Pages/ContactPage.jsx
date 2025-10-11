@@ -23,18 +23,18 @@ const ContactPage = () => {
 
       <div className="container mx-auto px-4 sm:px-6 md:px-10 pt-24 pb-24 bg-white">
 
-        {/* Header */}
+        {/*--------- Header -------------*/}
         <h2 className='text-3xl sm:text-2xl md:text-3xl font-medium font-main text-black text-center'>Get In Touch With Us</h2>
         <p className='mt-3.5 text-center text-gray-500 text-base sm:text-sm md:text-base max-w-xl mx-auto'>
           For More Information About Our Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
         </p>
 
-        {/* Contact Info + Form */}
+        {/*-------- Contact Info ------ */}
         <div className='mt-16 flex flex-col lg:flex-row justify-between gap-12'>
 
-          {/* Left Side */}
+          {/* -----------Left Side----------- */}
           <div className='flex flex-col gap-12 lg:w-1/3'>
-            {/* Address */}
+            {/* -------Address------------ */}
             <div className='flex gap-4'>
               <FaLocationDot className='text-black text-2xl mt-1.5' />
               <div>
@@ -43,7 +43,7 @@ const ContactPage = () => {
               </div>
             </div>
 
-            {/* Phone */}
+            {/*--------- Phone------------ */}
             <div className='flex gap-4'>
               <FaPhoneAlt className='text-black text-xl mt-1.5' />
               <div>
