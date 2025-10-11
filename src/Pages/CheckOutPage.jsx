@@ -55,7 +55,7 @@ const CheckOutPage = () => {
             </div>
           </div>
 
-          {/* Right Side - Order Summary */}
+          {/* -------------- Order Summary--------- */}
           <div className='flex-1 flex flex-col gap-6 xl:w-[35%]'>
             <div className='border-b pb-4'>
               <div className='flex justify-between items-center mb-2'>
