@@ -31,7 +31,7 @@ export default function ProductPage() {
     <>
     <div className="min- bg-white flex  justify-center py-30 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl w-full">
-        {/* Left Side - Images */}
+        {/* Images */}
         <div className="flex gap-4">
           {/* Thumbnails */}
           <div className="flex flex-col gap-4">
