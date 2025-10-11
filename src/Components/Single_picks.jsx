@@ -18,7 +18,7 @@ return (
                 <div
                     className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-3">
                     <div className='flex flex-col justify-end gap-3 items-end'>
-                        {/* cart icon top-right */}
+                       {/* ------cart icon------- */}
                         <div className="">
                             <button onClick={(e)=> { 
                                 e.stopPropagation(); 
@@ -30,10 +30,11 @@ return (
                             </button>
                         </div>
 
-                        {/* love icon bottom-center */}
+                       
                         <div className="">
+                            {/* -------love icon------- */}
                             <button onClick={(e)=> {
-                                e.stopPropagation(); // parent click থামাবে
+                                e.stopPropagation(); 
                                 console.log("Love button clicked");
                                 }}
                                 className="bg-white p-2 rounded-full shadow hover:bg-gray-200 transition"
