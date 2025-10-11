@@ -21,7 +21,7 @@ export default function AboutPage() {
 
       <div className="bg-gray-50 min-h-screen px-4 sm:px-6 md:px-10">
 
-        {/* Hero Section */}
+        {/* -----------Hero Section----------- */}
         <section className="text-center py-16 px-2 sm:px-6 text-black">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 font-main">About Us</h1>
           <p className="max-w-2xl mx-auto text-base sm:text-lg font-main">
@@ -30,7 +30,7 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* About Text */}
+        {/*--------------- About Text --------------*/}
         <section className="max-w-4xl mx-auto px-2 sm:px-6 py-12 text-center mt-5">
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-semibold mb-4 font-main">Who We Are</h2>
           <p className="text-gray-600 text-base sm:text-lg font-main">
@@ -41,7 +41,7 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* Mission - Vision - Values */}
+        {/*------------------- Mission Values--------------- */}
         <section className="max-w-6xl mx-auto px-2 sm:px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white shadow-md rounded-2xl p-6 text-center hover:shadow-lg transition">
             <FaBullseye className="mx-auto text-4xl text-blue-600 mb-4" />
@@ -68,7 +68,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* ------------------Team Section -------------*/}
+        {/* ------------------Team-------------*/}
         <section className="bg-gray-100 py-16 px-2 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-10 font-main">Meet Our Team</h2>
           <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -93,7 +93,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* -------------------Call to Action ----------------*/}
+        {/* -------------------Call ----------------*/}
         <section className="text-center py-12 px-2 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 font-main">Want to know more?</h2>
           <p className="text-gray-600 mb-6 text-base sm:text-lg font-main">
