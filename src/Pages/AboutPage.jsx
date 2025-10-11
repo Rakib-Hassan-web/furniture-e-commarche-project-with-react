@@ -68,7 +68,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team Section */}
+        {/* Team Section -------------*/}
         <section className="bg-gray-100 py-16 px-2 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-10 font-main">Meet Our Team</h2>
           <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -93,7 +93,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Call to Action */}
+        {/* -------------------Call to Action ----------------*/}
         <section className="text-center py-12 px-2 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 font-main">Want to know more?</h2>
           <p className="text-gray-600 mb-6 text-base sm:text-lg font-main">
