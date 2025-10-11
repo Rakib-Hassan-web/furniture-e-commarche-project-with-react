@@ -85,7 +85,7 @@ export default function BlogPage() {
             {/* --------Title----------- */}
             <h2 className="text-xl font-semibold font-main">{blog.title}</h2>
 
-            {/*-------- Description ----------*/}
+            {/*----------- Description ----------*/}
             <p className="text-gray-600 font-main">{blog.desc}</p>
 
             {/*------------ Button ----------*/}
