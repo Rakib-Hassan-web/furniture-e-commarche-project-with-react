@@ -27,8 +27,8 @@ const Service = () => {
               If goods have problems, consectetur adipim scing elit.
             </p>
           </div>
+          {/* -----------single-------------- */}
 
-          {/* single */}
           <div className='w-full md:w-[376px] text-center md:text-left'>
             <h2 className='text-[28px] sm:text-[30px] md:text-[32px] font-main font-medium text-black mb-2'>
               Secure Payment
