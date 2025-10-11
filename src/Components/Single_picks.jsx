@@ -10,7 +10,7 @@ return (
 
         <div onClick={CartClick}
             className="group w-[287px] pb-3 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-xl cursor-pointer">
-            {/* image wrapper */}
+            {/* -------------image wrapper------------ */}
             <div className="relative w-full h-[287px] overflow-hidden rounded-xl">
                 <img src={proimage} alt="Products" className="w-full h-full object-cover" />
 
