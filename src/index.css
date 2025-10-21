@@ -15,6 +15,12 @@
   
 }
 
+/* Hide dots on small devices */
+@media (max-width: 600px) {
+  .slick-dots {
+    display: none !important;
+  }
+}
 
 
 
