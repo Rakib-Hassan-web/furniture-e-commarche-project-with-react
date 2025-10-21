@@ -6,7 +6,7 @@ const SingleProduct = () => {
     
     
     </>
-  )
+  )adfsaf
 }
 
 export default SingleProduct
